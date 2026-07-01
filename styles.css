@@ -48,7 +48,9 @@ img{display:block;max-width:100%}
 .cv-btn.solid:hover{filter:brightness(1.1)}
 
 /* content */
-.content{padding:64px 60px 40px;max-width:900px}
+.content{padding:64px 70px 40px;max-width:1240px;margin:0 auto;width:100%}
+.two-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#about p,#about .lead,#contact .lead{max-width:860px}
 .section{margin-bottom:64px;scroll-margin-top:30px}
 .sec-title{font-size:1.5rem;color:var(--head);font-weight:700;margin-bottom:22px;display:flex;align-items:center;gap:12px}
 .sec-num{font-family:var(--mono);color:var(--accent);font-size:1rem;font-weight:500}
@@ -71,7 +73,7 @@ img{display:block;max-width:100%}
 .proj p{color:var(--muted);font-size:.9rem;flex:1}
 .proj-link{font-family:var(--mono);font-size:.8rem;color:var(--accent);margin-top:14px}
 
-.cert-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.cert-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
 .cert-list li{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 18px;color:#d1dce8}
 .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);flex:none}
 
@@ -93,4 +95,5 @@ img{display:block;max-width:100%}
   .cv-btn{margin-top:16px}
   .content{padding:40px 22px}
   .skill-row{grid-template-columns:1fr;gap:4px}
+  .two-grid{grid-template-columns:1fr}
 }
